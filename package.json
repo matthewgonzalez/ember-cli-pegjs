@@ -7,6 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["ember-addon", "pegjs"],
+  "ember-addon": {
+    "before": "ember-cli-babel"
+  },
   "author": "asaf@indexia.co",
   "license": "MIT",
   "dependencies": {
