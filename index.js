@@ -1,6 +1,8 @@
 'use strict';
 
 var peg = require('broccoli-pegjs');
+var Funnel = require('broccoli-funnel');
+var mergeTrees = require('broccoli-merge-trees');
 
 module.exports = {
   name: 'ember-cli-pegjs',
@@ -21,7 +23,8 @@ module.exports = {
         name: 'ember-cli-pegjs',
         ext: 'pegjs',
         toTree: function(tree) {
-          return peg(tree, this.options);
+          var parsers = peg(new Funnel(tree, { include: [/\.pegjs$/] }), addon.options);
+          return mergeTrees([tree, parsers]);
         }
       });
     }
