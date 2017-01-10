@@ -18,14 +18,14 @@
   "dependencies": {
     "broccoli-funnel": "^1.0.1",
     "broccoli-merge-trees": "^1.1.0",
-    "broccoli-pegjs": "^0.0.1"
+    "broccoli-pegjs": "https://github.com/matthewgonzalez/broccoli-pegjs.git"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/indexiatech/ember-cli-pegjs.git"
+    "url": "git://github.com/matthewgonzalez/ember-cli-pegjs.git"
   },
   "bugs": {
-    "url": "https://github.com/indexiatech/ember-cli-pegjs/issues"
+    "url": "https://github.com/matthewgonzalez/ember-cli-pegjs/issues"
   },
-  "homepage": "https://github.com/indexiatech/ember-cli-pegjs"
+  "homepage": "https://github.com/matthewgonzalez/ember-cli-pegjs"
 }
